@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author"content="Edwan Marques">
+    <meta name="description" content="Landing Page da Lorrany">
+    <meta name="keywords" content="Lolly">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lorrany & Evandro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="lateral">
+            <p>#</p>
+        </div>
+        <div class="principal">
+            <header>
+                <nav>
+                    <ul class="navegacao">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#presentes">Presentes</a></li>
+                        <li><a href="#presenca">Presença</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="conteudo">
+                <header class="cabecalho">
+                    <h1>Evandro <span>&hearts;</span> Lorrany</h1>
+                    <p>Renovação de Votos</p>
+                </header>
+                
+                <section id="sobre">
+                    <h3 class="titulo">Nossa Historia</h3>
+                    <p class="texto">No crepúsculo de 2019, nossos caminhos se cruzaram e, de uma amizade singela, floresceu um amor imenso. Quando 2020 chegou, já estávamos apaixonados e o desejo de unir nossas vidas em matrimônio se tornou incontrolável. Então, mesmo com o mundo sendo engolido pelo caos de uma pandemia, decidimos nos casar. Foi uma cerimônia íntima, apenas nós dois, isolados do resto do mundo. Desde então, sonhamos com o dia em que poderíamos celebrar nosso amor cercados pelas pessoas mais queridas em nossas vidas. E agora, graças à bênção divina, esse sonho se tornará realidade este ano. E você, nosso convidado especial, é parte fundamental deste momento tão precioso para nós. Sua presença é, sem dúvida, nosso maior presente!</p>
+                    <div class="local">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1706116505191!6m8!1m7!1szf3DCsvX8-DJptuRBbSqUQ!2m2!1d-15.62975905326985!2d-47.67895371375798!3f119.35734278196558!4f-9.025584250548008!5f0.7820865974627469" frameborder="0"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="400" height="300"></iframe>
+                        
+                        <div class="detalhes-local">
+                            <p><strong>Local:</strong> Gleba B, Chácara 02, Bica do DER </p>
+                            <p><strong>Data:</strong> 09/06/2024</p>
+                            <p><strong>Horário:</strong> 16:00 (Horário de Brasília)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="presentes">
+                    <h3 class="titulo">Presentes</h3>
+                    <p class="texto">Caso deseje presentear o casal, sinta-se a vontade para contribuir com a lua de mel, com o valor que sentir no coração, ficaremos gratos!</p>
+                </section>
+
+                <section id="presenca">
+                    <h3 class="titulo">Presença</h3>
+                    <p class="texto">Para melhor controle e organização, precisamos que você nos informe se poderá ou não comparecer a festa. Para isso, basta clicar no botão abaixo.</p>
+                    <button id="abrir-modal" class="botao-verde">Informar presença</button>
+                </section>
+
+                <section id="contato">
+                    <h3 class="titulo">Contato</h3>
+                    <p class="texto">Entre em contato com a gente caso tenha alguma dúvida.</p>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" placeholder="Nome" required >
+                        
+                        <label for="telefone">Telefone:</label>
+                        <input id="telefone" type="text" placeholder="(xx) xxxxx-xxxx" required >
+                        
+                        <label for="msg-contato">Mensagem:</label>
+                        <textarea id="msg-contato" type="textearea" placeholder="Deixe sua mensagem aqui..." required ></textarea> 
+                        
+                        <button class="botao">Enviar</button>
+                    </form>
+                </section>  
+                
+                <div id="modal-container" class="modal-container">
+                    <div class="modal">
+                        <button id="fechar-modal" class="fechar-modal botao-vermelho">X</button>
+                        
+                        <h2 class="titulo-modal">Confirmação de presença</h2>
+
+                        <form>
+                            <label>Nome: </label>
+                            <input type="text" placeholder="Nome" required >
+
+                            <label>Telefone para contato: </label>
+                            <input id="telefone-modal" type="text" placeholder="(xx) xxxxx-xxxx" required >
+                            
+                            <div class="botoes-radio ">
+                                <input type="radio" name="idade" value="Adulto" checked>
+                                <label>Adulto</label>
+
+                                <input type="radio" name="idade" value="Adolescente">
+                                <label>Adolescente</label>
+
+                                <input type="radio" name="idade" value="Criança">
+                                <label>Criança</label>
+                            </div>
+
+                            <div class="botoes-radio ">
+                                <p>Voce come alimentos de origem animal?</p>
+                                <input type="radio" name="alimentacao" value="sim" checked>
+                                <label>sim</label>
+
+                                <input type="radio" name="alimentacao" value="nao">
+                                <label>Não</label>    
+                            </div>
+                            
+                            <label>Deixe uma mensagem para os noivos:</label>
+                            <textarea type="textearea" placeholder="Deixe sua mensagem aqui..."></textarea> 
+                            
+                            <div class="botoes-confirmacao">
+                                <button class="botao">Infelizmente não poderei ir</button>
+                                <button class="botao-verde">Estarei presente</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer class="rodape">
+               &hearts; Com amor, Lorrany & Evandro 2024 &hearts;
+            </footer>
+        </div>
+    </div> 
+    <script src="script.js"></script>  
+</body>
+</html>
